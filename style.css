@@ -442,4 +442,37 @@ bottom:20px;
 right:20px;
 }
 
+ .testimonials{
+padding:80px 10%;
+text-align:center;
+background:#0d0d0d;
 }
+
+.testimonials h2{
+color:gold;
+margin-bottom:40px;
+}
+
+.testimonial-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.testimonial{
+background:#111;
+padding:30px;
+border-radius:10px;
+max-width:300px;
+}
+
+.testimonial p{
+font-style:italic;
+margin-bottom:10px;
+}
+
+.testimonial h4{
+color:gold;
+} 
+
