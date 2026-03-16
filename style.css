@@ -462,6 +462,22 @@ align-items:center;
 width:90%;
 }
 
+.menu-download{
+display:inline-block;
+margin-top:40px;
+background:gold;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+transition:0.3s;
+}
+
+.menu-download:hover{
+background:#d4af37;
+}
+  
 .gallery-container{
 grid-template-columns:1fr;
 }
