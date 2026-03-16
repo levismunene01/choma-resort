@@ -372,6 +372,29 @@ transition:0.3s;
 transform:scale(1.1);
 }
 
+.call-button{
+position:fixed;
+bottom:95px;
+right:25px;
+background:#ff6600;
+color:white;
+font-size:26px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 6px 15px rgba(0,0,0,0.4);
+z-index:999;
+transition:0.3s;
+}
+
+.call-button:hover{
+transform:scale(1.1);
+}
+
 /* SCROLL ANIMATIONS */
 
 section{
