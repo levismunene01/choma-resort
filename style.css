@@ -445,4 +445,92 @@ iframe{
 height:250px;
 }
 
+/* CONTACT SECTION */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+background:#0d0d0d;
 }
+
+.contact h2{
+font-size:36px;
+color:gold;
+margin-bottom:15px;
+}
+
+.contact p{
+color:#ccc;
+margin-bottom:30px;
+font-size:18px;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.contact-btn{
+padding:14px 30px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+/* Call button */
+
+.contact-btn.call{
+background:#ff6600;
+color:white;
+}
+
+/* Email button */
+
+.contact-btn.email{
+background:#007BFF;
+color:white;
+}
+
+/* Reservation button */
+
+.contact-btn.reserve{
+background:gold;
+color:black;
+}
+
+.contact-btn:hover{
+opacity:0.8;
+transform:translateY(-2px);
+}
+
+
+/* CLICKABLE EMAIL IN FOOTER */
+
+.email-link{
+color:#4da6ff;
+text-decoration:none;
+}
+
+.email-link:hover{
+text-decoration:underline;
+}
+
+
+/* CONTACT MOBILE FIX */
+
+@media (max-width:768px){
+
+.contact-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.contact-btn{
+width:80%;
+text-align:center;
+}
+
+}  
