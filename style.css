@@ -65,7 +65,8 @@ color:gold;
 
 .hero{
 height:90vh;
-background-image:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
+.hero{
+background-image:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600");
 background-size:cover;
 background-position:center;
 display:flex;
