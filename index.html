@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<title>Restaurant Name | Best Dining Experience in Nairobi</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+<title>Restaurant Name | Best Dining Experience in Nairobi</title>
+
 <meta name="description" content="Best restaurant in Nairobi offering steak, pasta, burgers and fine dining experience. Visit us today.">
-
 <meta name="keywords" content="restaurant Nairobi, steak Nairobi, pasta Nairobi, best restaurant Kenya">
-
 <meta name="author" content="Restaurant Name">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 
 <link rel="icon" href="images/favicon.png" type="image/png">
 
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 
 </head>
 
 <body>
 
-
-
 <header class="navbar">
+
 <h2 class="logo">Luxury Dining</h2>
 
 <nav>
@@ -38,22 +34,27 @@
 <a href="#reservation">Reservation</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
+
+<!-- HERO -->
 
 <section class="hero" id="home" data-aos="fade-up">
 
 <div class="overlay">
 
 <h1>Experience Culinary Excellence</h1>
-
 <p>Signature dining experience</p>
 
-<button>Reserve Table</button>
+<button onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">
+Reserve Table
+</button>
 
 </div>
 
 </section>
 
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
@@ -66,72 +67,102 @@ luxury ambiance, and exceptional chefs.
 
 </section>
 
+<!-- MENU -->
+
 <section id="menu" class="menu">
-  <h2>Our Signature Menu</h2>
 
-  <div class="menu-container">
-    <div class="menu-item">
-      <div class="menu-item-image">
-        <img src="images/steak.jpg" alt="Grilled Steak">
-      </div>
-      <div class="menu-item-body">
-        <h3>Grilled Steak</h3>
-        <p class="menu-desc">Premium grilled steak served with garlic butter.</p>
-        <div class="menu-bottom">
-          <span class="price">$28</span>
-          <button class="menu-btn">Reserve</button>
-        </div>
-      </div>
-    </div>
+<h2>Our Signature Menu</h2>
 
-    <div class="menu-item">
-      <div class="menu-item-image">
-        <img src="images/pasta.jpg" alt="Seafood Pasta">
-      </div>
-      <div class="menu-item-body">
-        <h3>Seafood Pasta</h3>
-        <p class="menu-desc">Fresh seafood tossed in creamy Italian sauce.</p>
-        <div class="menu-bottom">
-          <span class="price">$22</span>
-          <button class="menu-btn">Reserve</button>
-        </div>
-      </div>
-    </div>
+<div class="menu-container">
 
-    <div class="menu-item">
-      <div class="menu-item-image">
-        <img src="images/burger.jpg" alt="Chef Special Burger">
-      </div>
-      <div class="menu-item-body">
-        <h3>Chef Special Burger</h3>
-        <p class="menu-desc">Juicy beef burger with caramelized onions.</p>
-        <div class="menu-bottom">
-          <span class="price">$18</span>
-          <button class="menu-btn">Reserve</button>
-        </div>
-      </div>
-    </div>
+<div class="menu-item">
 
-    <div class="menu-item">
-      <div class="menu-item-image">
-        <img src="images/truffle.jpg" alt="Truffle Fries">
-      </div>
-      <div class="menu-item-body">
-        <h3>Truffle Fries</h3>
-        <p class="menu-desc">Crispy fries with parmesan and truffle oil.</p>
-        <div class="menu-bottom">
-          <span class="price">$10</span>
-          <button class="menu-btn">Reserve</button>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="menu-item-image">
+<img src="images/steak.jpg" alt="Grilled Steak" loading="lazy">
+</div>
 
-  <a href="menu.pdf" class="menu-download" download>
+<div class="menu-item-body">
+<h3>Grilled Steak</h3>
+<p class="menu-desc">Premium grilled steak served with garlic butter.</p>
+
+<div class="menu-bottom">
+<span class="price">$28</span>
+<button class="menu-btn">Reserve</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="menu-item">
+
+<div class="menu-item-image">
+<img src="images/pasta.jpg" alt="Seafood Pasta" loading="lazy">
+</div>
+
+<div class="menu-item-body">
+<h3>Seafood Pasta</h3>
+<p class="menu-desc">Fresh seafood tossed in creamy Italian sauce.</p>
+
+<div class="menu-bottom">
+<span class="price">$22</span>
+<button class="menu-btn">Reserve</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="menu-item">
+
+<div class="menu-item-image">
+<img src="images/burger.jpg" alt="Chef Special Burger" loading="lazy">
+</div>
+
+<div class="menu-item-body">
+<h3>Chef Special Burger</h3>
+<p class="menu-desc">Juicy beef burger with caramelized onions.</p>
+
+<div class="menu-bottom">
+<span class="price">$18</span>
+<button class="menu-btn">Reserve</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="menu-item">
+
+<div class="menu-item-image">
+<img src="images/truffle.jpg" alt="Truffle Fries" loading="lazy">
+</div>
+
+<div class="menu-item-body">
+<h3>Truffle Fries</h3>
+<p class="menu-desc">Crispy fries with parmesan and truffle oil.</p>
+
+<div class="menu-bottom">
+<span class="price">$10</span>
+<button class="menu-btn">Reserve</button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<a href="menu.pdf" class="menu-download" download>
 Download Full Menu
 </a>
 
 </section>
+
+<!-- GALLERY -->
 
 <section id="gallery" class="gallery">
 
@@ -139,18 +170,19 @@ Download Full Menu
 
 <div class="gallery-container">
 
-<img src="images/steak.jpg" alt="Steak">
-<img src="images/pasta.jpg" alt="Pasta">
-<img src="images/burger.jpg" alt="Burger">
-<img src="images/dessert.jpg" alt="Dessert">
-<img src="images/wine.jpg" alt="Wine">
-<img src="images/restaurant.jpg" alt="Restaurant Interior">
+<img src="images/steak.jpg" alt="Steak" loading="lazy">
+<img src="images/pasta.jpg" alt="Pasta" loading="lazy">
+<img src="images/burger.jpg" alt="Burger" loading="lazy">
+<img src="images/dessert.jpg" alt="Dessert" loading="lazy">
+<img src="images/wine.jpg" alt="Wine" loading="lazy">
+<img src="images/restaurant.jpg" alt="Restaurant Interior" loading="lazy">
 
 </div>
 
 </section>
 
-  
+<!-- TESTIMONIALS -->
+
 <section class="testimonials">
 
 <h2>What Our Guests Say</h2>
@@ -176,7 +208,8 @@ Download Full Menu
 
 </section>
 
-  
+<!-- RESERVATION -->
+
 <section class="reservation" id="reservation" data-aos="zoom-in">
 
 <h2>Reserve a Table</h2>
@@ -184,11 +217,8 @@ Download Full Menu
 <form class="reservation-form">
 
 <input type="text" placeholder="Your Name" required>
-
 <input type="email" placeholder="Your Email" required>
-
 <input type="date" required>
-
 <input type="number" placeholder="Number of Guests" required>
 
 <button type="submit">Book Reservation</button>
@@ -197,87 +227,84 @@ Download Full Menu
 
 </section>
 
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
 
 <h2>Contact Us</h2>
 
 <p>Reserve your table today.</p>
 
-<button>Book Now</button>
+<button onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">
+Book Now
+</button>
 
 </section>
 
+<!-- LOCATION -->
+
 <section id="location">
+
 <h2>Our Location</h2>
 
 <div class="map-container">
-<iframe 
+
+<iframe
 src="https://www.google.com/maps?q=Nairobi&output=embed"
-width="100%" 
-height="400" 
-style="border:0;" 
-allowfullscreen="" 
 loading="lazy">
 </iframe>
+
 </div>
 
 </section>
+
+<!-- FOOTER -->
 
 <footer class="footer">
 
 <div class="footer-container">
 
-<div class="footer-brand">
+<div>
 <h3>Luxury Dining</h3>
 <p>Fine dining experience with premium ingredients and unforgettable atmosphere.</p>
 </div>
-  
-<div class="footer-contact">
+
+<div>
 <h4>Contact</h4>
-<p>Phone: +1 234 567 890</p>
+<p>Phone: +254 700 000000</p>
 <p>Email: reservations@luxurydining.com</p>
-<p>Location: Downtown City</p>
+<p>Location: Nairobi</p>
 </div>
 
 <div>
 <h4>Opening Hours</h4>
-<p>Monday - Friday: 12pm - 11pm</p>
-<p>Saturday: 12pm - Midnight</p>
-<p>Sunday: 1pm - 10pm</p>
+<p>Mon - Fri: 12pm - 11pm</p>
+<p>Sat: 12pm - Midnight</p>
+<p>Sun: 1pm - 10pm</p>
 </div>
-  
+
 <div>
 <h4>Follow Us</h4>
 <a href="https://instagram.com" target="_blank">Instagram</a>
 </div>
-  
-<div class="footer-social">
-<h4>Follow Us</h4>
-<p>Instagram</p>
-<p>Facebook</p>
-<p>Twitter</p>
-</div>
 
 </div>
 
-<p class="copyright">© 2026 Luxury Dining. All rights reserved.</p>
+<p class="copyright">
+© 2026 Luxury Dining. All rights reserved.
+</p>
 
 </footer>
 
+<!-- FLOAT BUTTONS -->
+
+<a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank">💬</a>
+
+<a href="tel:+254700000000" class="call-button">📞</a>
+
+<!-- SCRIPTS -->
+
 <script src="script.js"></script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-AOS.init({
-duration: 1000,
-once: true
-});
-</script>
-
-<a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank">
-💬
-</a>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
@@ -288,10 +315,6 @@ once:true
 });
 </script>
 
-<a href="tel:+254700000000" class="call-button">
-📞
-</a>
-  
 </body>
 
 </html>
