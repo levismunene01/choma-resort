@@ -1,0 +1,64 @@
+/* Menu Grid */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Hover effect */
+.menu-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Filter buttons */
+.menu-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.menu-filters button {
+  padding: 5px 15px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menu-filters .active-filter {
+  background: #ff6347; /* highlight color */
+  color: #fff;
+}
+
+/* Order Popup */
+.order-popup {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.6);
+  display:flex; justify-content:center; align-items:center;
+  z-index:1000;
+}
+.order-popup-content {
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  width:90%;
+  max-width:400px;
+  text-align:center;
+}
+.order-popup-content .close-btn {
+  margin-top:10px;
+  background:#ccc;
+  border:none;
+  padding:5px 10px;
+  cursor:pointer;
+  border-radius:5px;
+}

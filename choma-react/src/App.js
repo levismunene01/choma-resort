@@ -13,7 +13,7 @@ import Reservation from "./pages/Reservation";
 import Contact from "./pages/Contact";
 
 // Optional: Import your CSS
-import './style.css';
+import './styles/style.css';
 
 function App() {
   return (
