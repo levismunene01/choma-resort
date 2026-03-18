@@ -62,3 +62,28 @@
   cursor:pointer;
   border-radius:5px;
 }
+/* Order Form Popup */
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.order-form input,
+.order-form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.order-form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ff6347;
+  color: #fff;
+  margin-top: 5px;
+}
+.order-form .close-btn {
+  background: #ccc;
+  color: #000;
+}

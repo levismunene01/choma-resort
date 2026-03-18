@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import '../styles/Menu.css';
 
-// Sample menu items (can later move to JSON or API)
+// Sample menu items
 const menuItems = [
   {
     name: "Grilled Steak",
@@ -28,8 +28,15 @@ const menuItems = [
 ];
 
 function Menu() {
-  const [orderItem, setOrderItem] = useState(null); // selected item for order popup
-  const [filter, setFilter] = useState("All"); // category filter
+  const [orderItem, setOrderItem] = useState(null);
+  const [filter, setFilter] = useState("All");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    quantity: 1,
+    notes: ""
+  });
 
   const categories = ["All", "Steak", "Pizza", "Burger"];
 
@@ -37,6 +44,26 @@ function Menu() {
     filter === "All"
       ? menuItems
       : menuItems.filter((item) => item.category === filter);
+
+  // Handle form input changes
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Order Received:
+Item: ${orderItem.name}
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Quantity: ${formData.quantity}
+Notes: ${formData.notes}`);
+    // Reset form
+    setFormData({ name: "", email: "", phone: "", quantity: 1, notes: "" });
+    setOrderItem(null);
+  };
 
   return (
     <section className="menu">
@@ -90,17 +117,56 @@ function Menu() {
         Download Full Menu
       </a>
 
-      {/* Order Popup */}
+      {/* Order Popup Form */}
       {orderItem && (
         <div className="order-popup" onClick={() => setOrderItem(null)}>
           <div className="order-popup-content" onClick={(e) => e.stopPropagation()}>
             <h3>Order: {orderItem.name}</h3>
             <p>Price: {orderItem.price}</p>
-            <p>{orderItem.desc}</p>
-            <button onClick={() => { alert(`You ordered: ${orderItem.name}`); setOrderItem(null); }}>
-              Confirm Order
-            </button>
-            <button className="close-btn" onClick={() => setOrderItem(null)}>Cancel</button>
+            <form onSubmit={handleSubmit} className="order-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="number"
+                name="quantity"
+                min="1"
+                value={formData.quantity}
+                onChange={handleChange}
+                required
+              />
+              <textarea
+                name="notes"
+                placeholder="Special instructions"
+                value={formData.notes}
+                onChange={handleChange}
+              />
+              <button type="submit">Confirm Order</button>
+              <button type="button" className="close-btn" onClick={() => setOrderItem(null)}>
+                Cancel
+              </button>
+            </form>
           </div>
         </div>
       )}
