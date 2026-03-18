@@ -1,127 +1,277 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
-<title>Luxury Dining | Best Restaurant in Nairobi</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Luxury restaurant in Nairobi offering steak, pasta, burgers and premium dining experience.">
-<meta name="keywords" content="restaurant Nairobi, steak Nairobi, pasta Nairobi, fine dining Kenya">
-<meta name="author" content="Luxury Dining"><link rel="icon" type="image/png" href="images/favicon.png"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"></head><body><header class="navbar"><h2 class="logo">Luxury Dining</h2><div class="menu-toggle" id="menu-toggle">☰</div><nav id="nav-menu"><a href="#home">Home</a>
-<a href="#menu">Menu</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Restaurant</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="favicon.png">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">Luxury Restaurant</div>
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<nav id="nav-menu">
+<a href="#home">Home</a>
 <a href="#about">About</a>
+<a href="#menu">Menu</a>
 <a href="#gallery">Gallery</a>
 <a href="#reservation">Reservation</a>
 <a href="#contact">Contact</a>
+</nav>
 
-</nav></header><section class="hero" id="home" data-aos="fade-up"><div class="overlay"><h1>Experience Culinary Excellence</h1><p>Signature dining experience</p><a href="#reservation">
-<button>Reserve Table</button>
-</a></div></section><section class="about" id="about"><h2>About Our Restaurant</h2><p>
-We deliver a world-class dining experience with premium ingredients,
-luxury ambiance, and exceptional chefs.
-</p></section><section id="menu" class="menu"><h2>Our Signature Menu</h2><div class="menu-container"><div class="menu-item"><div class="menu-item-image">
-<img src="images/steak.jpg" alt="Grilled Steak" loading="lazy">
-</div><div class="menu-item-body"><h3>Grilled Steak</h3><p class="menu-desc">Premium grilled steak served with garlic butter.</p><div class="menu-bottom">
-<span class="price">$28</span>
-<a href="#reservation">
-<button class="menu-btn">Reserve</button>
-</a>
-</div></div>
-</div><div class="menu-item"><div class="menu-item-image">
-<img src="images/pasta.jpg" alt="Seafood Pasta" loading="lazy">
-</div><div class="menu-item-body"><h3>Seafood Pasta</h3><p class="menu-desc">Fresh seafood tossed in creamy Italian sauce.</p><div class="menu-bottom">
-<span class="price">$22</span>
-<a href="#reservation">
-<button class="menu-btn">Reserve</button>
-</a>
-</div></div>
-</div><div class="menu-item"><div class="menu-item-image">
-<img src="images/burger.jpg" alt="Chef Special Burger" loading="lazy">
-</div><div class="menu-item-body"><h3>Chef Special Burger</h3><p class="menu-desc">Juicy beef burger with caramelized onions.</p><div class="menu-bottom">
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="overlay">
+
+<h1>Welcome To Luxury Restaurant</h1>
+
+<p>Fine dining experience with premium cuisine</p>
+
+<button onclick="document.getElementById('menu').scrollIntoView()">View Menu</button>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>About Us</h2>
+
+<p>
+We deliver world-class dining experiences with fresh ingredients,
+beautiful presentation and unforgettable taste.
+</p>
+
+</section>
+
+<!-- MENU -->
+
+<section class="menu" id="menu">
+
+<h2>Our Menu</h2>
+
+<div class="menu-container">
+
+<div class="menu-item">
+
+<div class="menu-item-image">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+</div>
+
+<div class="menu-item-body">
+<h3>Grilled Steak</h3>
+<p class="menu-desc">Premium beef grilled perfectly.</p>
+
+<div class="menu-bottom">
+
+<span class="price">$25</span>
+
+<button class="menu-btn">Order</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="menu-item">
+
+<div class="menu-item-image">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+</div>
+
+<div class="menu-item-body">
+<h3>Italian Pizza</h3>
+<p class="menu-desc">Stone baked authentic pizza.</p>
+
+<div class="menu-bottom">
+
 <span class="price">$18</span>
-<a href="#reservation">
-<button class="menu-btn">Reserve</button>
-</a>
-</div></div>
-</div><div class="menu-item"><div class="menu-item-image">
-<img src="images/truffle.jpg" alt="Truffle Fries" loading="lazy">
-</div><div class="menu-item-body"><h3>Truffle Fries</h3><p class="menu-desc">Crispy fries with parmesan and truffle oil.</p><div class="menu-bottom">
-<span class="price">$10</span>
-<a href="#reservation">
-<button class="menu-btn">Reserve</button>
-</a>
-</div></div>
-</div></div><a href="menu.pdf" class="menu-download" download>
-Download Full Menu
-</a></section><section id="gallery" class="gallery"><h2>Food Gallery</h2><div class="gallery-container"><img src="images/steak.jpg" class="gallery-img" alt="Steak"><img src="images/pasta.jpg" class="gallery-img" alt="Pasta"><img src="images/burger.jpg" class="gallery-img" alt="Burger"><img src="images/dessert.jpg" class="gallery-img" alt="Dessert"><img src="images/wine.jpg" class="gallery-img" alt="Wine"><img src="images/restaurant.jpg" class="gallery-img" alt="Restaurant"></div></section><div class="lightbox" id="lightbox"><span class="close-lightbox">×</span>
 
-<img class="lightbox-img" id="lightbox-img"></div><section class="testimonials"><h2>What Our Guests Say</h2><div class="testimonial-container"><div class="testimonial-card">
-<p>"One of the best dining experiences I've ever had."</p>
-<h4>- James Carter</h4>
-</div><div class="testimonial-card">
-<p>"The steak and wine pairing was absolutely perfect."</p>
-<h4>- Maria Lopez</h4>
-</div><div class="testimonial-card">
-<p>"Luxury atmosphere and amazing service."</p>
-<h4>- Daniel Smith</h4>
-</div></div></section><section class="reservation" id="reservation" data-aos="zoom-in"><h2>Reserve a Table</h2><form class="reservation-form"><input type="text" placeholder="Your Name" required><input type="email" placeholder="Your Email" required><input type="date" required><input type="number" placeholder="Number of Guests" required><button type="submit">Book Reservation</button>
+<button class="menu-btn">Order</button>
 
-</form></section><section class="contact" id="contact"><h2>Contact Us</h2><p>Reserve your table today.</p><div class="contact-buttons"><a href="tel:+254700000000" class="contact-btn call">
-📞 Call Us
-</a><a href="mailto:reservations@luxurydining.com" class="contact-btn email">
-✉️ Send Email
-</a><a href="#reservation" class="contact-btn reserve">
-📅 Book Table
-</a></div></section><section id="location"><h2>Our Location</h2><div class="map-container"><iframe
-src="https://www.google.com/maps?q=Nairobi&output=embed"
+</div>
+
+</div>
+
+</div>
+
+<div class="menu-item">
+
+<div class="menu-item-image">
+<img src="https://images.unsplash.com/photo-1559847844-d721426d6edc">
+</div>
+
+<div class="menu-item-body">
+<h3>Luxury Burger</h3>
+<p class="menu-desc">Juicy beef burger with cheese.</p>
+
+<div class="menu-bottom">
+
+<span class="price">$14</span>
+
+<button class="menu-btn">Order</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<a class="menu-download" href="menu.pdf" download>Download Full Menu</a>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<h2>Food Gallery</h2>
+
+<div class="gallery-container">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" class="gallery-img">
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" class="gallery-img">
+
+<img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9" class="gallery-img">
+
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" class="gallery-img">
+
+</div>
+
+</section>
+
+<!-- RESERVATION -->
+
+<section class="reservation" id="reservation">
+
+<h2>Book a Table</h2>
+
+<form class="reservation-form">
+
+<input type="text" placeholder="Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="date" required>
+
+<input type="time" required>
+
+<button type="submit">Reserve Table</button>
+
+</form>
+
+</section>
+
+<!-- LOCATION -->
+
+<section id="location">
+
+<h2>Find Us</h2>
+
+<div class="map-container">
+
+<iframe
+src="https://maps.google.com/maps?q=nairobi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="400"
+style="border:0"
 allowfullscreen
 loading="lazy">
-</iframe></div></section><footer class="footer"><div class="footer-container"><div class="footer-brand">
-<h3>Luxury Dining</h3>
-<p>Fine dining experience with premium ingredients.</p>
-</div><div class="footer-contact">
-<h4>Contact</h4><p>Phone: +254 700 000000</p><p>Email:
-<a href="mailto:reservations@luxurydining.com" class="email-link">
-reservations@luxurydining.com
-</a>
-</p><p>Location: Nairobi</p></div><div>
-<h4>Opening Hours</h4><p>Mon - Fri: 12pm - 11pm</p>
-<p>Sat: 12pm - Midnight</p>
-<p>Sun: 1pm - 10pm</p></div></div><p class="copyright">© 2026 Luxury Dining</p></footer><a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank">💬</a>
+</iframe>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>We would love to serve you</p>
+
+<div class="contact-buttons">
+
+<a href="tel:+254700000000" class="contact-btn call">Call Us</a>
+
+<a href="mailto:restaurant@email.com" class="contact-btn email">Send Email</a>
+
+<a href="#reservation" class="contact-btn reserve">Reserve Table</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div>
+<h3>Luxury Restaurant</h3>
+<p>Premium dining experience</p>
+</div>
+
+<div>
+<h4>Contact</h4>
+<p>Phone: +254700000000</p>
+<p>Email: <a href="mailto:restaurant@email.com" class="email-link">restaurant@email.com</a></p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 Luxury Restaurant
+</p>
+
+</footer>
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+<span class="close-lightbox" id="close-lightbox">×</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<!-- FLOATING BUTTONS -->
+
+<a href="https://wa.me/254700000000" class="whatsapp-float">💬</a>
 
 <a href="tel:+254700000000" class="call-button">📞</a>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script>
-
-AOS.init({
-duration:1000,
-once:true
-});
-
-
-const toggle = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav-menu");
-
-toggle.onclick = () => {
-nav.classList.toggle("active");
-};
-
-
-
-const images = document.querySelectorAll(".gallery-img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const closeBtn = document.querySelector(".close-lightbox");
-
-images.forEach(img=>{
-img.onclick = ()=>{
-lightbox.style.display="flex";
-lightboxImg.src = img.src;
-}
-});
-
-closeBtn.onclick = ()=>{
-lightbox.style.display="none";
-}
-
-lightbox.onclick = ()=>{
-lightbox.style.display="none";
-}
-
 <script src="script.js"></script>
+
 </body>
+
 </html>
