@@ -1,12 +1,23 @@
+// SECTION SCROLL ANIMATION
+
 const sections = document.querySelectorAll("section");
 
-window.addEventListener("scroll", () => {
-sections.forEach(section => {
-const position = section.getBoundingClientRect().top;
-const screenPosition = window.innerHeight / 1.3;
+function revealSections() {
 
-if(position < screenPosition){
+sections.forEach(section => {
+
+const sectionTop = section.getBoundingClientRect().top;
+const triggerPoint = window.innerHeight * 0.8;
+
+if(sectionTop < triggerPoint){
 section.classList.add("visible");
 }
+
 });
-});
+
+}
+
+window.addEventListener("scroll", revealSections);
+
+// Run once when page loads
+revealSections();
